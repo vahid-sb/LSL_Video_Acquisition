@@ -20,6 +20,17 @@ Requirements
 	"opencv-python",
 
   
-  
-  
+Compatibility
+-------------
 
+This code is tested under Python 3.9.
+
+License
+-------
+MIT License.
+
+
+Author
+-------
+
+Written by [Vahid Samadi Bokharaie](https://www.vahid-sb.com).
