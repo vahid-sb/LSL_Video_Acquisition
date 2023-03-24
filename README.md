@@ -14,6 +14,12 @@ The only thing you might need to change is the variable `port_num` in the script
 
 Currently, the output video file in saved in the same folder as the script. You can change that by changing the `dir_out` variable. When the input appears in Lab Recorder and when you start recording and save the results to an XDF file, the path to the video file is saved under desc variable in the stream saved in the XDF file. 
 
+### Time Stamps
+
+A note on the time stamps you find in the recorded stream in the XDF files: the values you see in the `time_stamps` array are in seconds, and anything after the decimal point is the fractions of the second. They are not date-time values formatted in any standard such as Unix time. So, when matching segments of different streams in each recording, you do not need to convert time stamp values, using libraries such as datetime in Python. You can use the values directly. 
+
+This has generated some confusion among those who use the LSL platform and the related libraries, including this one. The LSL documentation is entirely silent on this simple but crucial fact, and I hope they are amended soon to avoid further confusion among some of the users of the library.  
+
 
 Requirements
 ------------
